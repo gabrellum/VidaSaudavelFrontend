@@ -25,7 +25,7 @@ header {
 
 ul {
     display: flex;
-    gap: 32px;
+    gap: 3rem;
 }
 
 .a{
@@ -56,7 +56,7 @@ ul {
 
 #land {
     display: flex;
-    margin-top: 40px;
+   
     padding-top: 30px;
 }
 
@@ -223,4 +223,78 @@ footer {
 #form-button {
     margin-top: 20px;
     
+}
+
+#ModalLabel2 {
+    font-size: 2rem;
+}
+
+#Modal2{
+    font-size: 2rem;
+}
+
+@media (max-width: 589px ) { 
+
+    .heqad-image {
+        max-width: 380px;
+        width: 100%;
+        max-height: 290px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .background{
+        
+        height: 75rem;
+    }
+
+    .a{
+        text-decoration: none;
+        color:  #07003B;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .list-item {
+        list-style: none;
+    
+    }
+    
+    #navstyle {
+     padding-top: 20px;
+   
+    }
+    
+    #text-primary {
+        font-size: 3.5rem;
+    }
+    
+   
+    
+    #land {
+        display: flex;
+   
+    }
+    
+    #mainp {
+   
+        color: #07003B;
+        font-size: 3rem;
+        font-weight: 700;
+       
+    
+    }
+    
+    #mainh{
+       color: #2AA7FF;
+       font-size: 6rem;
+       font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    #Fale {
+       
+        
+    }
+
 }
