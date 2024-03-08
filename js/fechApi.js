@@ -13,8 +13,10 @@ export async function sendDataToServer(e) {
         
     } 
 
+    console.log(data);
 
-    await fetch(`https://vidasaudavel.onrender.com/clients`, {
+
+    await fetch("https://vidasaudavel.onrender.com/clients", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
