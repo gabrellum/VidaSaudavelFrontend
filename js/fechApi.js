@@ -31,7 +31,6 @@ export async function sendDataToServer(e) {
      })
      
 
-     location.reload()
-
+   
 }
 
