@@ -24,6 +24,6 @@ export async function sendDataToServer(e) {
         body: JSON.stringify(data)
     })   
 
-    location.reload();
+    location.reload()
 }
 
