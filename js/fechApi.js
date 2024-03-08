@@ -16,14 +16,24 @@ export async function sendDataToServer(e) {
     console.log(data);
 
 
-    await fetch("https://vidasaudavel.onrender.com/clients", {
+    await fetch(`https://vidasaudavel.onrender.com/clients/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
-    })   
+    }).then((response) => { 
+        if(!response.ok) {
+            throw new Error(`Erro na requisição: ${response.statusText}`)
+        }
+        return response.json()
+    }).then((responseData) => {
+        console.log('Dados enviados com sucesso: ' + responseData);
+     }).catch((error) => { 
+        console.error('Erro ao enviar os dados: ', error)
+     })
+     
+     
+     location.reload()
 
-    location.reload()
-}
-
+    }
